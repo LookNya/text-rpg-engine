@@ -1,0 +1,21 @@
+<html>
+<head>
+
+<!--<script src="http://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>-->
+<!--<script src="core.js"></script>-->
+<!--<link rel="stylesheet" href="style.css">-->
+
+</head>
+<!--<body onload="init()">-->
+<body>
+<script>
+var xhr = new XMLHttpRequest();
+xhr.open("POST", 'http://91.144.179.84:9005/user/update_counters', true);
+xhr.send('{"auth_key":"key", "viewer_id": 12345}');
+xhr.onreadystatechange=function(){
+	if (xhr.readyState!=4) return;//xhr.status!=200
+	console.log(xhr.responseText);
+}
+</script>
+<body> 
+</html>

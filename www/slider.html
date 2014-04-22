@@ -1,0 +1,8 @@
+function init(){
+	var script;
+	if (document.createElement && ((script = document.createElement('script')))) {
+		script.type = 'text/javascript';
+		script.src = 'core.js?='+ new Date().getTime();
+		document.getElementsByTagName('head')[0].appendChild(script);
+	}
+}

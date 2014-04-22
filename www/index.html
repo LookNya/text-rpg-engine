@@ -1,0 +1,81 @@
+﻿<html>
+<head>
+
+<script src="http://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
+<!--script src="static.js"></script-->
+
+<script src="core.js"></script>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body onload="init()">
+<div id=""></div>
+<div class=""></div>
+
+<div id="loader">
+	Загрузка...
+</div>
+
+<div id="errorBox" style="display:none">
+<div id="errorBoxContent"></div>
+</div>
+
+<div id="app">
+
+<div id="currPlace" class="noSelectable">
+	<div id="placeSlide">Зеленый лес</div>
+</div>
+
+<div id="locations" class="noSelectable">
+	<span onclick="changeLocation('forest')">Зеленый лес</span>
+	<span onclick="changeLocation('cave')">Влажные пещеры</span>
+	<span onclick="">Круглые холмы</span>
+	<span onclick="">Волшебная чаща</span>
+</div>
+
+<div id="content">
+	<div id="left">
+
+		<div class="post">
+			<div class="postContent" id="post">First</div>
+			<div class="sharePost" onclick = "share(this)" postID="post" class="noSelectable">Поделиться</div>
+		</div>
+	</div>
+	<div id="right">
+		<div id="main">
+			<div id="mainContent">
+				<div id="send" onclick="exec['buy']()">buy</div>
+				<div id="send" onclick="exec['reset']()">reset</div>
+			</div>
+			<div id="inventory" class="invClose">
+				<div id=""></div>
+				Супер-бронь +800 ко всему
+			</div>
+		</div>
+		<div id="statsAndInv">
+			<div id="invOpen" onclick="showInv()" class="noSelectable">
+				Инвентарь
+			</div>
+			<div id="stats">
+				Хп: 100 </br>
+				Деф: 1000  </br>
+				Железо: 9000  </br>
+				Баратейки: 9000  </br>
+			</div>
+		</div>
+		
+
+		
+	</div>
+</div>
+
+
+
+</div>
+<!--div onclick="exec['auth']()" id="red" >auth
+contentEditable=true
+</div-->
+
+<body> 
+</html>
